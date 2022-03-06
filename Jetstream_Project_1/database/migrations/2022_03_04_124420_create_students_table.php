@@ -18,7 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string('name');
             $table->integer('age');
             $table->string('div');
-            $table->enum('Gender',['male','female']);
+            $table->enum('gender', ['male','female']);
             $table->timestamps();
         });
     }

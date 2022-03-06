@@ -22,25 +22,29 @@
                 <thead>
                     <tr class="bg-gray-100">
                         <th class="px-4 py-2 w-20">No.</th>
-                        <th class="px-4 py-2">Title</th>
-                        <th class="px-4 py-2">Desc</th>
-                        <th class="px-4 py-2">Action</th>
+                        <th class="px-4 py-2">Name</th>
+                        <th class="px-4 py-2">Age</th>
+                        <th class="px-4 py-2">Div/Class</th>
+                        <th class="px-4 py-2">Gender</th>
+                        <td class="px-4 py-2">Action</td>
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- @foreach($posts as $post)
+                    @foreach($items as $item)
                     <tr>
-                        <td class="border px-4 py-2">{{ $post->id }}</td>
-                        <td class="border px-4 py-2">{{ $post->title }}</td>
-                        <td class="border px-4 py-2">{{ $post->desc}}</td>
+                        <td class="border px-4 py-2">{{ $item->id }}</td>
+                        <td class="border px-4 py-2">{{ $item->name }}</td>
+                        <td class="border px-4 py-2">{{ $item->age }}</td>
+                        <td class="border px-4 py-2">{{ $item->div}}</td>
+                        <td class="border px-4 py-2">{{ $item->gender }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $post->id }})"
+                            <button wire:click="edit({{ $item->id }})"
                                 class="bg-blue-500  text-white font-bold py-2 px-4 rounded">Edit</button>
-                            <button wire:click="delete({{ $post->id }})"
+                            <button wire:click="delete({{ $item->id }})"
                                 class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
                         </td>
                     </tr>
-                    @endforeach --}}
+                    @endforeach
                 </tbody>
             </table>
         </div>
