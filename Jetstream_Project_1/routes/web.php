@@ -24,4 +24,5 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     })->name('dashboard');
 
     Route::get('/students', Students::class)->name('students');
+    Route::get('/scores', Students::class)->name('scores');
 });
